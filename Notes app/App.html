@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="App.css">
+</head>
+<body>
+    <div id="PageContainer">
+        <header>
+            <div class="iconleft">
+                <img  id="logo"  src="assets/Appunto.png"  alt="logo-img" />
+                    <a href="#">NOTES APP</a>
+                </div>
+                    
+            <div class="iconright">
+            <a href="#">Chi siamo</a>
+            <a href="#">Cosa facciamo</a>
+            <a href="#">Contatti</a>
+            <img src="assets/Icona-utente.png" width="70px" height="40px" alt="icona-utente">
+            </div>
+ </header>
+        
+        <main>
+        <div class="container">
+        <aside>
+        <h1>Search</h1>
+        <ul>
+        <li>Date</li>
+        <p>  <a href="#"> °Today</a></p>
+        <p> <a href="#"> °week</a></p>
+        <p> <a href="#"> °This Month</a></p>
+        <li> Priority</li>
+        <p> <a href="#">°High</a></p>
+        <p> <a href="#">°Mid</a> </p>
+        <p> <a href="#">°Low</a></p>
+        <li>Label</li>
+        <p> <a href="#">°A</a></p>
+        <p> <a href="#">°B</a></p>
+        <p> <a href="#">°C</a></p>
+        </ul>
+        </aside>
+        
+        <div class="main-container">
+            <div class="form-container">
+                <h2 class="task">Add note</h2>
+                <form id="taskForm">
+              
+                <label for="taskName">Title</label>
+                <input type="text" id="taskName" name="taskName" >
+                <label for="taskDescription">Note</label>
+                <textarea id="taskDescription" name="taskDescription"  ></textarea>
+                <button  type="submit">Add</button>
+                </form>
+            </div>
+        
+        <div class="task-list" id="taskList">
+            <h1>Notes</h1>
+        </div>
+        </div>
+        </body>
+        <script src="App.js" type="module">
+        </script>
+        </html>
+        </div>
+        </main>
+        </div>
+        </html>
+               
+</body>
+</html>
