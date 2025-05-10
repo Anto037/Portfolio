@@ -1,0 +1,389 @@
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  font-family: "Dosis", sans-serif;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+#PageContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+}
+
+/* Header */
+header {
+  background-color: #87ceeb;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.iconleft {
+  padding: 10px;
+  display: flex;
+  cursor: pointer;
+}
+
+.iconleft img {
+  width: 60px;
+  padding: 0 4px;
+}
+
+.iconleft a {
+  color: #1e3d59;
+  padding-top: 18px;
+  font-size: 23px;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.iconright {
+  display: flex;
+  padding-top: 20px;
+  gap: 45px;
+  cursor: pointer;
+}
+
+.iconright a {
+  color: #1e3d59;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+.iconright a:hover,
+.iconleft a:hover {
+  color: #ff8c00;
+  transition: 0.3s;
+}
+
+/* Toggle Theme Button */
+#toggleTheme {
+  margin-bottom: 20px;
+  margin-right: 10px;
+  background-color: #87ceeb;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#toggleTheme:hover {
+  transform: scale(1.5);
+  background-color: cadetblue;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: black;
+}
+
+/* Language Flags */
+.lang-icons {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-right: 35px;
+}
+
+.lang-flag {
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+  margin-bottom: 20px;
+}
+
+.lang-flag:hover {
+  transform: scale(1.5);
+}
+
+/* Main Image */
+.main-image {
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+  margin-top: 50px;
+}
+
+.image-container {
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+/* Search Bar */
+.search-container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  padding: 12px;
+}
+
+.search-bar {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  width: 320px;
+}
+
+.search-button {
+  background-color: #87ceeb;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+
+
+/* Weather Cards */
+.weather-results {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 30px;
+  margin-top: 20px;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.weather-results::-webkit-scrollbar {
+  display: none;
+}
+
+.weather-card {
+  background-color: #87ceeb;
+  border: 2px solid #f0f0f0;
+  border-radius: 40px;
+  padding: 20px;
+  width: 200px;
+  min-width: 200px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 1.2); /* ombra base */
+  text-align: center;
+  cursor: pointer; /* cursore a mano */
+}
+
+.weather-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* ombra più forte al passaggio */
+}
+
+.weather-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.weather-card p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.weather-card img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .weather-card {
+    width: 90%;
+    min-width: unset;
+  }
+
+  .weather-results {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+/* Effetto hover sul bottone "Cerca" */
+.search-button:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+/* Effetto hover su link in alto */
+.iconright a:hover,
+.iconleft a:hover {
+  transform: scale(1.1);
+  color: #ff8c00;
+  transition: all 0.3s ease;
+}
+
+/* Migliora transizione bandiere */
+.lang-flag {
+  transition: transform 0.3s ease;
+}
+
+/* Effetto hover bottone tema */
+#toggleTheme:hover {
+  transform: rotate(10deg) scale(1.2);
+  background-color: cadetblue;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: black;
+  transition: all 0.3s ease;
+}
+
+
+.about-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: cyan;
+  border-radius: 20px;
+  margin: 20px auto;
+  max-width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+}
+
+.about-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 18px;
+  color: #333;
+}
+
+
+
+.contact-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-section input, .contact-section textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.contact-section button {
+  padding: 10px 20px;
+  background-color: #87ceeb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.contact-section button:hover {
+  background-color: #ff8c00;
+}
+.contact-section a {
+  color: #1e3d59;
+  text-decoration: none;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #87ceeb;
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #1e3d59;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #ff8c00;
+}
+
+
+#social {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon img {
+  width: 30px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.social-icon img:hover {
+  transform: scale(1.2);
+}
+
+
+#news {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.news-item {
+  background-color: orange;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.news-item h3 {
+  font-size: 24px;
+  color: #87ceeb;
+}
+
+.news-item p {
+  font-size: 18px;
+}
+
+
