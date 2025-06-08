@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+
+body{
+    background-color:white;
+    margin: 0px;
+    padding: 0px;
+    font-family:  "Dosis", sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#PageContainer{
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    
+}
+
+header{
+   background-color: lightcoral;
+   display:flex; 
+   justify-content: space-between;
+   height: 80px;
+
+}
+
+.iconleft{
+   padding: 10px 20px;
+   display: flex;
+   cursor: pointer;
+   justify-content: flex-start;
+}
+
+.iconleft img{
+   width: 50px;
+   padding: 0px 20px;
+}
+
+.iconleft a{
+   color: black;
+   padding: 0px 0px;
+   text-decoration: none;
+   padding-top: 18px;
+   font-size: 25px;
+   font-weight: bolder;
+   white-space:nowrap;
+}
+
+.iconright{
+    display: flex;
+    gap: 60px;
+    padding-top: 20px;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.iconright a {
+   font-family: Arial, Helvetica, sans-serif;
+   color: black;
+   text-decoration: none;
+   display:flex;
+   flex-direction: column;
+   display: block;
+   font-size: 18px;
+   margin-block-start: 0.67em;
+   margin-block-end: 0.67em;
+   font-weight: bold;
+   unicode-bidi: isolate;
+  
+}
+
+.iconright img{
+    width: 50px;
+    padding: 0px 40px;
+}
+.main{
+    display: flex;
+    height: calc(100vh - 80px );
+}
+
+.container {
+    display: flex;
+   height: 100vh;
+   
+}
+
+aside{
+    background-color: grey;
+    width:20%; 
+ padding: 0px 30px;
+ font-weight: bolder;
+ padding-top: 20px;
+}
+
+section{
+    width: 10%; 
+    background-color: white;
+}
+
+.main-container{
+   width: 100%;
+    display: flex;
+ }
+
+.form-container{
+   background-color:white;
+   padding: 20px;
+   max-width: 400px;
+   border-right: 1px solid grey;
+
+}
+
+.form-container input, .form-container textarea, .form-container select{
+   width: 90%;
+   padding: 10px;
+   margin: 10px 0;
+   border: 1px solid gray;
+   border-radius: 4px;
+   font-size: 14px;
+}
+
+.task-list {
+   height: calc(100vh - 80px);  
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   overflow-y: auto;
+   width: 100%;
+   padding-bottom: 50px; 
+   background-color: white;
+}
+
+.form-container button{
+   background-color: lightcoral;
+   color:white;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+ margin-left: 160px;
+}
+
+
+.task-card{
+   background-color:white;
+   font-weight: bolder;
+   padding: 20px 50px;
+   border: 2px solid gray;
+   color: black;
+   width: 400px;
+   height: 100px;
+   justify-content: space-between;
+   border-radius: 20px;
+  position: relative;
+}
+
+.task-card p{
+   font-size: 20px;
+   color: black;
+   font-weight: bolder;
+   margin-top: -3px; 
+   margin-left: -30px;
+    
+   
+}
+
+.task-card span{
+   display: block;
+   font-size: 13px;
+   color: black;
+   margin-left: -30px;
+   white-space: pre;
+ 
+}
+
+.remove-btn{
+   background-color: lightcoral;
+   color: white;
+   border: none;
+   padding: 5px 10px;
+   margin-top: 10px;
+   cursor: pointer;
+   border-radius: 4px;
+   position: absolute;
+   top: 5px;  
+   right: 10px; 
+
+}
+
+.task-list h1{
+   text-align: center;
+}
+
+
+h2.task{
+      font-size: 25px;
+      color: black;
+   margin-left: 20vh;
+}
