@@ -97,21 +97,21 @@ Per me la programmazione non è solo studio, ma anche un modo per esprimermi e m
             <img src="assets/To-Do-List.PNG" alt="Anteprima progetto 1">
             <h3 data-i18n-key="projects.title1">To-Do List App</h3>
             <p data-i18n-key="projects.description1">Una semplice app per gestire le attività, creata con HTML, CSS e JavaScript.</p>
-            <a href="https://github.com/Anto037/Portfolio/tree/main/ToDoList" target="_blank" rel="noopener" data-i18n-key="projects.view1">Vedi su GitHub</a>
+            <a href="https://github.com/Anto037/Portfolio/tree/main/ToDoList" class="project-link" target="_blank" rel="noopener" data-i18n-key="projects.view1">Vedi su GitHub</a>
         </div>
 
         <div class="project-card">
             <img src="assets/Notes-App.PNG" alt="Anteprima progetto 2">
             <h3 data-i18n-key="projects.title2">Notes App</h3>
             <p data-i18n-key="projects.description2">Un'app per prendere appunti, realizzata con HTML, CSS e JavaScript.</p>
-            <a href="https://github.com/Anto037/Portfolio/tree/main/Notes%20app" target="_blank" rel="noopener" data-i18n-key="projects.view2">Vedi su GitHub</a>
+            <a href="https://github.com/Anto037/Portfolio/tree/main/Notes%20app" class="project-link" target="_blank" rel="noopener" data-i18n-key="projects.view2">Vedi su GitHub</a>
         </div>
 
         <div class="project-card">
             <img src="assets/Climafy.PNG" alt="Anteprima progetto 3">
             <h3 data-i18n-key="projects.title3">Climafy</h3>
             <p data-i18n-key="projects.description3">Un'applicazione per il meteo sviluppata con JavaScript e API esterne.</p>
-            <a href="https://github.com/Anto037/Portfolio/tree/main/Climafy" target="_blank" rel="noopener" data-i18n-key="projects.view3">Vedi su GitHub</a>
+            <a href="https://github.com/Anto037/Portfolio/tree/main/Climafy" class="project-link" target="_blank" rel="noopener" data-i18n-key="projects.view3">Vedi su GitHub</a>
     </div>
 
     </div>
@@ -175,7 +175,7 @@ Per me la programmazione non è solo studio, ma anche un modo per esprimermi e m
             <p data-i18n-key="certifications.description1">
                 Ho conseguito la certificazione ICDL (International Computer Driving License), che attesta le competenze informatiche di base riconosciute a livello internazionale. Competenze principali: word processor, fogli di calcolo, presentazioni, gestione email e navigazione web.
             </p>
-            <a href="" target="_blank" rel="noopener" data-i18n-key="certifications.view1">VEDI CERTIFICAZIONE</a>
+            <a href="" class="cert-link" target="_blank" rel="noopener" data-i18n-key="certifications.view1">VEDI CERTIFICAZIONE</a>
         </div>
 
         <div class="project-card">
@@ -184,7 +184,7 @@ Per me la programmazione non è solo studio, ma anche un modo per esprimermi e m
             <p data-i18n-key="certifications.description2">
                 Diploma in Sistemi Informativi Aziendali (SIA), percorso che unisce competenze informatiche e aziendali, fornendo una solida base teorica e pratica nel campo IT, preparandomi a proseguire gli studi nello sviluppo web.
             </p>
-            <a href="" target="_blank" rel="noopener" data-i18n-key="certifications.view2">VEDI CERTIFICAZIONE</a>
+            <a href="" class="cert-link" target="_blank" rel="noopener" data-i18n-key="certifications.view2">VEDI CERTIFICAZIONE</a>
         </div>
 
         <div class="project-card">
@@ -193,7 +193,7 @@ Per me la programmazione non è solo studio, ma anche un modo per esprimermi e m
             <p data-i18n-key="certifications.description3">
                 Certificazione per approfondire le tecniche avanzate di scrittura e comunicazione efficace per contenuti web, migliorando l’esperienza utente con testi chiari e coinvolgenti.
             </p>
-            <a href="" target="_blank" rel="noopener" data-i18n-key="certifications.view3">VEDI CERTIFICAZIONE</a>
+            <a href="" class="cert-link" target="_blank" rel="noopener" data-i18n-key="certifications.view3">VEDI CERTIFICAZIONE</a>
         </div>
 
         <div class="project-card">
@@ -202,7 +202,7 @@ Per me la programmazione non è solo studio, ma anche un modo per esprimermi e m
             <p data-i18n-key="certifications.description4">
                 Certificazione in Graphic Design con Canva. Ho appreso le basi della progettazione visiva, branding e creazione di contenuti digitali professionali.
             </p>
-            <a href="" target="_blank" rel="noopener" data-i18n-key="certifications.view4">VEDI CERTIFICAZIONE</a>
+            <a href="" class="cert-link" target="_blank" rel="noopener" data-i18n-key="certifications.view4">VEDI CERTIFICAZIONE</a>
         </div>
 
         <div class="project-card">
@@ -211,7 +211,7 @@ Per me la programmazione non è solo studio, ma anche un modo per esprimermi e m
             <p data-i18n-key="certifications.description5">
                 Certificazione in Responsive Web Design, con focus su progettazione visiva, branding e creazione di contenuti digitali ottimizzati per tutti i dispositivi.
             </p>
-            <a href="" target="_blank" rel="noopener" data-i18n-key="certifications.view5">VEDI CERTIFICAZIONE</a>
+            <a href="" class="cert-link" target="_blank" rel="noopener" data-i18n-key="certifications.view5">VEDI CERTIFICAZIONE</a>
         </div>
     </div>
 </section>
@@ -262,26 +262,33 @@ Per me la programmazione non è solo studio, ma anche un modo per esprimermi e m
     </footer>
     <script src="Portfolio.js"></script>
     <script>
-  const modal = document.getElementById("imgModal");
-  const modalImg = document.getElementById("modalImg");
-  const span = document.getElementsByClassName("close")[0];
 
-  document.querySelectorAll(".project-card a").forEach(link => {
-    link.addEventListener("click", e => {
-      e.preventDefault();
-      const img = link.parentElement.querySelector("img");
-      modal.style.display = "block";
-      modalImg.src = img.src;
-    });
+    // Script per il popup immagine
+  // Popup immagine solo per i certificati
+const modal = document.getElementById("imgModal");
+const modalImg = document.getElementById("modalImg");
+const span = document.getElementsByClassName("close")[0];
+
+// Seleziona solo i link dei certificati
+document.querySelectorAll(".cert-link").forEach(link => {
+  link.addEventListener("click", e => {
+    e.preventDefault();
+    const img = link.parentElement.querySelector("img");
+    modal.style.display = "block";
+    modalImg.src = img.src;
   });
+});
 
-  span.onclick = function() {
-    modal.style.display = "none";
-  }
+// Chiudi popup cliccando sulla X
+span.onclick = function() {
+  modal.style.display = "none";
+}
 
-  modal.onclick = function(e) {
-    if (e.target === modal) modal.style.display = "none";
-  }
+// Chiudi popup cliccando fuori dall'immagine
+modal.onclick = function(e) {
+  if (e.target === modal) modal.style.display = "none";
+}
+
 </script>
 
 </body>
