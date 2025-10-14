@@ -175,7 +175,7 @@ Per me la programmazione non è solo studio, ma anche un modo per esprimermi e m
             <p data-i18n-key="certifications.description1">
                 Ho conseguito la certificazione ICDL (International Computer Driving License), che attesta le competenze informatiche di base riconosciute a livello internazionale. Competenze principali: word processor, fogli di calcolo, presentazioni, gestione email e navigazione web.
             </p>
-            <a href="https://github.com/Anto037/Portfolio/tree/main/ToDoList" target="_blank" rel="noopener">Vedi su GitHub</a>
+            <a href="" target="_blank" rel="noopener">Vedi certificazione</a>
         </div>
 
         <div class="project-card">
@@ -184,7 +184,7 @@ Per me la programmazione non è solo studio, ma anche un modo per esprimermi e m
             <p data-i18n-key="certifications.description2">
                 Diploma in Sistemi Informativi Aziendali (SIA), percorso che unisce competenze informatiche e aziendali, fornendo una solida base teorica e pratica nel campo IT, preparandomi a proseguire gli studi nello sviluppo web.
             </p>
-            <a href="https://github.com/Anto037/Portfolio/tree/main/Notes%20app" target="_blank" rel="noopener">Vedi su GitHub</a>
+            <a href="" target="_blank" rel="noopener">Vedi certificazione</a>
         </div>
 
         <div class="project-card">
@@ -193,7 +193,7 @@ Per me la programmazione non è solo studio, ma anche un modo per esprimermi e m
             <p data-i18n-key="certifications.description3">
                 Certificazione per approfondire le tecniche avanzate di scrittura e comunicazione efficace per contenuti web, migliorando l’esperienza utente con testi chiari e coinvolgenti.
             </p>
-            <a href="https://github.com/Anto037/Portfolio/tree/main/Climafy" target="_blank" rel="noopener">Vedi su GitHub</a>
+            <a href="" target="_blank" rel="noopener">Vedi certificazione</a>
         </div>
 
         <div class="project-card">
@@ -202,7 +202,7 @@ Per me la programmazione non è solo studio, ma anche un modo per esprimermi e m
             <p data-i18n-key="certifications.description4">
                 Certificazione in Graphic Design con Canva. Ho appreso le basi della progettazione visiva, branding e creazione di contenuti digitali professionali.
             </p>
-            <a href="https://github.com/Anto037/Portfolio/tree/main/Climafy" target="_blank" rel="noopener">Vedi su GitHub</a>
+            <a href="" target="_blank" rel="noopener">Vedi certificazione</a>
         </div>
 
         <div class="project-card">
@@ -211,10 +211,17 @@ Per me la programmazione non è solo studio, ma anche un modo per esprimermi e m
             <p data-i18n-key="certifications.description5">
                 Certificazione in Responsive Web Design, con focus su progettazione visiva, branding e creazione di contenuti digitali ottimizzati per tutti i dispositivi.
             </p>
-            <a href="https://github.com/Anto037/Portfolio/tree/main/Climafy" target="_blank" rel="noopener">Vedi su GitHub</a>
+            <a href="" target="_blank" rel="noopener">Vedi certificazione</a>
         </div>
     </div>
 </section>
+
+<!-- Popup immagine -->
+<div id="imgModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImg">
+</div>
+
 
 
         </section>
@@ -254,5 +261,28 @@ Per me la programmazione non è solo studio, ma anche un modo per esprimermi e m
         <p data-i18n-key="footer.rights">Copyrights</p>
     </footer>
     <script src="Portfolio.js"></script>
+    <script>
+  const modal = document.getElementById("imgModal");
+  const modalImg = document.getElementById("modalImg");
+  const span = document.getElementsByClassName("close")[0];
+
+  document.querySelectorAll(".project-card a").forEach(link => {
+    link.addEventListener("click", e => {
+      e.preventDefault();
+      const img = link.parentElement.querySelector("img");
+      modal.style.display = "block";
+      modalImg.src = img.src;
+    });
+  });
+
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  modal.onclick = function(e) {
+    if (e.target === modal) modal.style.display = "none";
+  }
+</script>
+
 </body>
 </html>
