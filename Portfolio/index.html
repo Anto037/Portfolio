@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="Portfolio.CSS">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#" aria-label="Home - Antonio Florea">
+                <img src="assets\logo-PORTFOLIO.svg" alt="AF" />
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#chisono" data-i18n-key="nav.about">CHI SONO</a></li>
+                <li><a href="#progetti" data-i18n-key="nav.projects">PROGETTI</a></li>
+                <li><a href="#competenze" data-i18n-key="nav.skills">COMPETENZE</a></li>
+                <li><a href="#contatti" data-i18n-key="nav.contact">CONTATTI</a></li>
+
+            </ul>
+        </nav>
+        <img src="assets/Logo-Inghilterra.svg" alt="Lingua Inglese" class="eng-logo" id="lang-toggle" role="button" tabindex="0" aria-pressed="false" aria-label="Cambia lingua">
+
+        <a href="mailto:antonioflorea39@gmail.com" class="mail-link" aria-label="Invia email ad Antonio Florea">
+            <img src="assets/logo-GMAIL.png" alt="Email Antonio Florea" class="gmail-logo">
+        </a>
+    </header>
+    <main>
+        <br><br>
+        <section class="about-me">
+            <h2 data-i18n-key="about.h2">CHI SONO</h2>
+            <p data-i18n-key="about.p">Mi chiamo Antonio Florea, ho 22 anni e sono appassionato di informatica, in particolare di programmazione web.
+La tecnologia mi ha sempre incuriosito: capire come funzionano le cose, costruirle, migliorarle.
+Per questo ho scelto di frequentare l’I.T.C.S. Lorgna Pindemonte di Verona con indirizzo SIA, dove ho iniziato a conoscere meglio il mondo della programmazione e delle reti.
+<br><br>
+Dopo il diploma, ho deciso di continuare a studiare informatica, iscrivendomi all’ITS Accademy LAST di Verona e al corso di Front-End Web Developer.
+Mi piace lavorare con HTML, CSS ,JavaScript e REACT, creare interfacce pulite e funzionali, e vedere come un’idea prende forma nel browser.
+Durante il percorso sto imparando anche a collaborare in gruppo, gestire progetti e usare strumenti moderni come GitHub e framework front-end.
+<br><br>
+Nel tempo libero mi piace sviluppare progetti personali, spesso piccoli siti o applicazioni web.
+Li uso sia per sperimentare nuove tecnologie che per arricchire il mio portfolio.
+Per me la programmazione non è solo studio, ma anche un modo per esprimermi e migliorarmi ogni giorno.</p>
+<br><br>
+<img src="assets/ME.jpg" alt="Foto di Antonio Florea" class="profile-pic">
+<br><br>
+<br><br>
+<div class="heading-with-icon">
+    <h3 data-i18n-key="education.h3">PERCORSI DI STUDIO</h3>
+    <img src="assets/Percorsi-di-studio.png" alt="Icona istruzione" class="icona-percorsi-di-studio">
+</div>
+<div class="timeline">
+  <div class="timeline-item">
+    <span class="timeline-dot"></span> 
+    <span class="date" data-i18n-key="education.date1"> Ottobre 2024 – in corso</span>
+    <h3 data-i18n-key="education.title1">ITS Accademy LAST - WEB DEVELOPER</h3>
+    <p class="place">Lungadige Galtarossa , 21 - 37133 Verona</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-dot"></span> 
+    <span class="date" data-i18n-key="education.date2"> Settembre 2018 –  Luglio 2023</span>
+    <h3 data-i18n-key="education.title2">Istituto Tecnico Commerciale Lorgna Pindemonte</h3>
+    <p class="place">Corso Cavour ,19 - 37121 Verona</p>
+  </div>
+</div>
+  <br><br>
+  <br><br>
+<div class="heading-with-icon">
+    <h3 data-i18n-key="experience.h3">ESPERIENZE LAVORATIVE</h3>
+<img src="assets/Esperienza-lavorativa.png" alt="Icona lavoro" class="icona-esperienze-lavorative"></div>
+<div class="timeline">
+  <div class="timeline-item">
+    <span class="timeline-dot"></span> 
+    <span class="date" data-i18n-key="experience.date1">Maggio 2024 – in corso</span>
+    <h3 data-i18n-key="experience.title1">STAGE PRESSO MWD SRL</h3>
+    <p class="place">Via Del Perlar , 2 - 37135 Verona</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-dot"></span> 
+    <span class="date" data-i18n-key="experience.date2">Ottobre 2024 – Dicembre 2024</span>
+    <h3 data-i18n-key="experience.title2">COMMESSO DA PRIMARK</h3>
+    <p class="place">Viale Delle Nazioni , 1 - 37135 Verona</p>
+  </div>
+</div>
+  <br><br>
+        </section>
+
+        <section class="projects" id="projects">
+
+            <h2 data-i18n-key="projects.h2">PROGETTI</h2>
+            <p data-i18n-key="projects.p">Qui trovi i miei progetti e il lavoro che ho realizzato.</p>
+    <div class="project-grid">
+        <div class="project-card">
+            <img src="assets/To-Do-List.PNG" alt="Anteprima progetto 1">
+            <h3 data-i18n-key="projects.title1">To-Do List App</h3>
+            <p data-i18n-key="projects.description1">Una semplice app per gestire le attività, creata con HTML, CSS e JavaScript.</p>
+            <a href="https://github.com/Anto037/Portfolio/tree/main/ToDoList" class="project-link" target="_blank" rel="noopener" data-i18n-key="projects.view1">Vedi su GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <img src="assets/Notes-App.PNG" alt="Anteprima progetto 2">
+            <h3 data-i18n-key="projects.title2">Notes App</h3>
+            <p data-i18n-key="projects.description2">Un'app per prendere appunti, realizzata con HTML, CSS e JavaScript.</p>
+            <a href="https://github.com/Anto037/Portfolio/tree/main/Notes%20app" class="project-link" target="_blank" rel="noopener" data-i18n-key="projects.view2">Vedi su GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <img src="assets/Climafy.PNG" alt="Anteprima progetto 3">
+            <h3 data-i18n-key="projects.title3">Climafy</h3>
+            <p data-i18n-key="projects.description3">Un'applicazione per il meteo sviluppata con JavaScript e API esterne.</p>
+            <a href="https://github.com/Anto037/Portfolio/tree/main/Climafy" class="project-link" target="_blank" rel="noopener" data-i18n-key="projects.view3">Vedi su GitHub</a>
+    </div>
+
+    </div>
+</section>
+
+<br><br>
+        <section class="skills">
+            <h2 data-i18n-key="skills.h2">COMPETENZE</h2>
+            <p data-i18n-key="skills.p">Questa è la sezione competenze dove elencherò le mie abilità tecniche e personali.</p>
+            <br><br>
+            <div class="skills-grid">
+        <div class="skill">
+            <h3 data-i18n-key="skills.html">HTML</h3>
+            <div class="skill-bar">
+                <div class="skill-level html-skill"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <h3 data-i18n-key="skills.css">CSS</h3>
+            <div class="skill-bar">
+                <div class="skill-level css-skill"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <h3 data-i18n-key="skills.javascript">JavaScript</h3>
+            <div class="skill-bar">
+                <div class="skill-level javascript-skill"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <h3 data-i18n-key="skills.react">React</h3>
+            <div class="skill-bar">
+                <div class="skill-level react-skill"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <h3 data-i18n-key="skills.github">GitHub</h3>
+            <div class="skill-bar">
+                <div class="skill-level git-skill"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <h3 data-i18n-key="skills.wordpress">Wordpress</h3>
+            <div class="skill-bar">
+                <div class="skill-level wordpress-skill"></div>
+            </div>
+    </div>
+    <br><br>
+    <section class="certifications" id="certifications">
+    <h2 data-i18n-key="certifications.h2">CERTIFICATI & RICONOSCIMENTI</h2>
+    <p data-i18n-key="certifications.p">Qui trovi tutte le mie certificazioni.</p>
+    <div class="project-grid">
+        <div class="project-card">
+            <img src="assets/DIPLOMA CERTIFICAZIONE ICDL.png" alt="Certificazione ICDL">
+            <h3 data-i18n-key="certifications.title1">ICDL</h3>
+            <p data-i18n-key="certifications.description1">
+                Ho conseguito la certificazione ICDL (International Computer Driving License), che attesta le competenze informatiche di base riconosciute a livello internazionale. Competenze principali: word processor, fogli di calcolo, presentazioni, gestione email e navigazione web.
+            </p>
+            <a href="" class="cert-link" target="_blank" rel="noopener" data-i18n-key="certifications.view1">VEDI CERTIFICAZIONE</a>
+        </div>
+
+        <div class="project-card">
+            <img src="assets/Notes-App.PNG" alt="Diploma SIA">
+            <h3 data-i18n-key="certifications.title2">MATURITÀ</h3>
+            <p data-i18n-key="certifications.description2">
+                Diploma in Sistemi Informativi Aziendali (SIA), percorso che unisce competenze informatiche e aziendali, fornendo una solida base teorica e pratica nel campo IT, preparandomi a proseguire gli studi nello sviluppo web.
+            </p>
+            <a href="" class="cert-link" target="_blank" rel="noopener" data-i18n-key="certifications.view2">VEDI CERTIFICAZIONE</a>
+        </div>
+
+        <div class="project-card">
+            <img src="assets/b13417ba-91d0-459b-b7c2-2883e03f57d0.png" alt="Certificazione Copywriting Avanzato">
+            <h3 data-i18n-key="certifications.title3">COPYWRITING AVANZATO</h3>
+            <p data-i18n-key="certifications.description3">
+                Certificazione per approfondire le tecniche avanzate di scrittura e comunicazione efficace per contenuti web, migliorando l’esperienza utente con testi chiari e coinvolgenti.
+            </p>
+            <a href="" class="cert-link" target="_blank" rel="noopener" data-i18n-key="certifications.view3">VEDI CERTIFICAZIONE</a>
+        </div>
+
+        <div class="project-card">
+            <img src="assets/f76445fd-f11e-4684-82de-7ea1449091de.png" alt="Certificazione Graphic Design con Canva">
+            <h3 data-i18n-key="certifications.title4">GRAPHIC DESIGN CON CANVA</h3>
+            <p data-i18n-key="certifications.description4">
+                Certificazione in Graphic Design con Canva. Ho appreso le basi della progettazione visiva, branding e creazione di contenuti digitali professionali.
+            </p>
+            <a href="" class="cert-link" target="_blank" rel="noopener" data-i18n-key="certifications.view4">VEDI CERTIFICAZIONE</a>
+        </div>
+
+        <div class="project-card">
+            <img src="assets\Certificazione-Responsive-Web-Design-FreeCodeCamp.PNG" alt="Certificazione Responsive Web Design">
+            <h3 data-i18n-key="certifications.title5">RESPONSIVE WEB DESIGN</h3>
+            <p data-i18n-key="certifications.description5">
+                Certificazione in Responsive Web Design, con focus su progettazione visiva, branding e creazione di contenuti digitali ottimizzati per tutti i dispositivi.
+            </p>
+            <a href="" class="cert-link" target="_blank" rel="noopener" data-i18n-key="certifications.view5">VEDI CERTIFICAZIONE</a>
+        </div>
+    </div>
+</section>
+
+<!-- Popup immagine -->
+<div id="imgModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImg">
+</div>
+
+
+
+        </section>
+        <section class="contact">
+              <h2 data-i18n-key="contact.title">CONTATTI</h2>
+  <p data-i18n-key="contact.description">Se vuoi metterti in contatto con me per collaborazioni o  progetti , ecco come puoi raggiungermi:</p>
+<ul>
+    <li>Email: <a href="mailto:antonioflorea39@gmail.com">antonioflorea39@gmail.com</a></li>
+    <li>Telefono: <a href="tel:+393895369900">+39 3895369900</a></li>
+    <li>LinkedIn: <a href="https://www.linkedin.com/in/antonio-florea-b2b611292/" target="_blank" rel="noopener">linkedin.com/in/antonioflorea</a></li>
+    <li>GitHub: <a href="https://github.com/Anto037/Portfolio" target="_blank" rel="noopener">github.com/Anto037</a></li>
+</ul>
+  <p data-i18n-key="contact.availability">Sono sempre disponibile a nuove opportunità e progetti interessanti, non esitare a scrivermi!</p>
+<br><br>
+   <h3 data-i18n-key="contact.message">Oppure inviami un messaggio qui:</h3>
+  <form action="https://formspree.io/f/mpwyorgo" method="POST" class="contact-form">
+  <div class="form-row">
+    <div class="form-group">
+      <label for="name" data-i18n-key="contact.form.name">Nome:</label>
+      <input type="text" id="name" name="name" required placeholder="Il tuo nome">
+    </div>
+    <div class="form-group">
+      <label for="email" data-i18n-key="contact.form.email">Email:</label>
+      <input type="email" id="email" name="_replyto" required placeholder="La tua email">
+    </div>
+  </div>
+  <label for="message" data-i18n-key="contact.form.message" autocomplete="off">Messaggio:</label>
+  <textarea id="message" name="message" rows="5" required placeholder="Scrivi qui il tuo messaggio"></textarea>
+
+  <button type="submit" data-i18n-key="contact.form.submit">Invia</button>
+</form>
+        </section>
+    </main>
+    <footer>
+        <p data-i18n-key="footer.copyright">&copy; 2025 My Portfolio</p>
+        <p data-i18n-key="footer.created">Realizzato da Antonio Florea</p>
+        <p data-i18n-key="footer.rights">Copyrights</p>
+    </footer>
+    <script src="Portfolio.js"></script>
+    <script>
+
+    // Script per il popup immagine
+  // Popup immagine solo per i certificati
+const modal = document.getElementById("imgModal");
+const modalImg = document.getElementById("modalImg");
+const span = document.getElementsByClassName("close")[0];
+
+// Seleziona solo i link dei certificati
+document.querySelectorAll(".cert-link").forEach(link => {
+  link.addEventListener("click", e => {
+    e.preventDefault();
+    const img = link.parentElement.querySelector("img");
+    modal.style.display = "block";
+    modalImg.src = img.src;
+  });
+});
+
+// Chiudi popup cliccando sulla X
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// Chiudi popup cliccando fuori dall'immagine
+modal.onclick = function(e) {
+  if (e.target === modal) modal.style.display = "none";
+}
+
+</script>
+
+</body>
+</html>
