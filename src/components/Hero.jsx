@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import FadeSection from "./FadeSection";
-import Me from "../assets/me.png";
+import Me from "../assets/Me.png";
 import LanguageToggle from "./LanguageToggle";
 import { t } from "../i18n";
 
