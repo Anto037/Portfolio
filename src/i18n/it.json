@@ -1,0 +1,71 @@
+{
+  "nav.home": "Home",
+  "nav.about": "Chi sono",
+  "nav.skills": "Competenze",
+  "nav.projects": "Progetti",
+  "nav.contact": "Contatti",
+  "nav.certifications":"Certificazioni",
+
+
+"hero.desc": "Creo interfacce moderne, pulite e funzionali. Sviluppo siti web con un approccio semplice e orientato ai dettagli." ,
+  "hero.role": "Sviluppatore Frontend",
+  "hero.cta": "Guarda i miei lavori",
+  "hero.name": "Antonio Florea",
+
+
+  "about.title": "Chi sono",
+  "about.profile": "Profilo",
+  "about.desc": "Sono un giovane Sviluppatore Web con una forte passione per il design moderno e l'UI/UX. Mi piace creare interfacce pulite, funzionali e curate nei dettagli, focalizzato principalmente sul Frontend. Attualmente frequento il percorso ITS LAST Academy come Web Developer.",
+  "about.overview": "Panoramica",
+  "about.name": "Nome",
+  "about.position": "Posizione",
+  "about.searching": "In cerca di",
+  "about.email": "Email",
+  "about.download": "Scarica CV",
+
+
+
+  "skills.title": "Competenze",
+  "skills.frontend": "Frontend",
+  "skills.design": "Design",
+  "skills.tools": "Strumenti",
+  "skills.soft": "Competenze trasversali",
+  "skills.incoming": "In arrivo",
+  "skills.incomingItems": "Nuove competenze in arrivo...",
+
+
+
+ "projects.title": "Progetti",
+"projects.subtitle": "Un insieme di progetti in cui sperimento tra design, programmazione e dinamiche interattive.",
+"projects.open": "Apri su GitHub",
+
+"projects.todo.desc": "App per gestire attività, realizzata con HTML, CSS e JavaScript.",
+"projects.notes.desc": "Applicazione per prendere appunti.",
+"projects.climafy.desc": "App meteo con API esterne.",
+"projects.web-agency.desc": "Sito web stile agenzia, realizzato con HTML, CSS e JavaScript.",
+
+
+"certs.title": "Certificazioni",
+"certs.view": "Vedi certificato",
+"certs.close": "Chiudi",
+"certs.incoming": "In arrivo...",
+
+
+"contact.title": "Contattami",
+"contact.subtitle": "Hai un progetto, un'idea o un'opportunità? Scrivimi e ne parliamo.",
+"contact.cta": "Scrivimi ora",
+
+"contact.email": "Email",
+"contact.phone": "Telefono",
+"contact.location": "Posizione",
+"contact.follow": "Seguimi",
+
+"contact.placeholder.name": "Inserisci il tuo nome",
+"contact.placeholder.email": "Inserisci la tua email",
+"contact.placeholder.message": "Inserisci il tuo messaggio",
+
+"contact.send": "Invia messaggio",
+
+
+  "footer.rights": "Tutti i diritti riservati"
+}

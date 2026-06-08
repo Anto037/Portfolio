@@ -1,0 +1,66 @@
+{
+  "nav.home": "Home",
+  "nav.about": "About me",
+  "nav.skills": "Skills",
+  "nav.projects": "Projects",
+  "nav.contact": "Contacts",
+  "nav.certifications":"Certifications",
+
+  "hero.name": "Antonio Florea",
+  "hero.role": "Frontend  Developer",
+  "hero.cta": "Check out my projects",
+  "hero.desc": "I create modern, clean and functional interfaces. I develop websites with a simple and detail-oriented approach.",
+
+  "about.title": "About me",
+  "about.profile": "Profile",
+  "about.desc": "I am a young Web Developer with a strong passion for modern design and UI/UX. I enjoy creating clean, functional and detail-oriented interfaces, mainly focused on Frontend. I am currently attending the ITS LAST Academy Web Developer program.",
+  "about.overview": "Overview",
+  "about.name": "Name",
+  "about.position": "Location",
+  "about.searching": "Looking for",
+  "about.email": "Email",
+  "about.download": "Download CV",
+
+  "skills.title": "Skills",
+  "skills.design": "Design",
+  "skills.frontend": "Frontend",
+  "skills.tools": "Tools",
+  "skills.soft": "Soft skills",
+  "skills.incoming": "Incoming",
+  "skills.incomingItems": "Incoming skills...",
+
+
+"projects.title": "Projects",
+"projects.subtitle": "A collection of projects where I experiment with design, programming and interactive dynamics.",
+"projects.open": "Open on GitHub",
+
+"projects.todo.desc": "A task management app built with HTML, CSS and JavaScript.",
+"projects.notes.desc": "An application for taking notes.",
+"projects.climafy.desc": "Weather app using external APIs.",
+"projects.web-agency.desc": "Agency-style website built with HTML, CSS and JavaScript.",
+
+"certs.title": "Certifications",
+"certs.view": "View certificate",
+"certs.close": "Close",
+"certs.incoming": "Coming soon...",
+
+
+
+"contact.title": "Contact me",
+"contact.subtitle": "Do you have a project, an idea or an opportunity? Write to me and let's talk.",
+"contact.cta": "Write me now",
+
+"contact.email": "Email",
+"contact.phone": "Phone",
+"contact.location": "Location",
+"contact.follow": "Follow me",
+
+"contact.placeholder.name": "Enter your name",
+"contact.placeholder.email": "Enter your email",
+"contact.placeholder.message": "Enter your message",
+
+"contact.send": "Send message",
+
+
+  "footer.rights": "All rights reserved"
+}
