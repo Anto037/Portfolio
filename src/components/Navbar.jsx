@@ -1,3 +1,4 @@
+import { trackEvent } from "../analytics";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { t } from "../i18n/index.js";
@@ -34,31 +35,56 @@ export default function Navbar({ lang, setLang }) {
       >
         {/* LOGO */}
         <div className="nav-logo">
-          <a href="" className="logo-neon">AF</a>
+          <a 
+            href="#home" 
+            className="logo-neon"
+            onClick={() => trackEvent("nav_click", { section: "logo" })}
+          >
+            AF
+          </a>
         </div>
 
         {/* LINKS CENTRATI */}
         <div className="nav-links">
-          <a href="#home">{t(lang, "nav.home")}</a>
-          <a href="#about">{t(lang, "nav.about")}</a>
-          <a href="#skills">{t(lang, "nav.skills")}</a>
-          <a href="#projects">{t(lang, "nav.projects")}</a>
-          <a href="#certifications">{t(lang, "nav.certifications")}</a>
-        </div>
-
-        {/* CTA DESKTOP + TOGGLE LINGUA */}
-        <div className="nav-right">
-          <a href="#contact" className="cta-animated nav-cta">
-            {t(lang, "nav.contact")}
+          <a href="#home" onClick={() => trackEvent("nav_click", { section: "home" })}>
+            {t(lang, "nav.home")}
           </a>
 
-         
+          <a href="#about" onClick={() => trackEvent("nav_click", { section: "about" })}>
+            {t(lang, "nav.about")}
+          </a>
+
+          <a href="#skills" onClick={() => trackEvent("nav_click", { section: "skills" })}>
+            {t(lang, "nav.skills")}
+          </a>
+
+          <a href="#projects" onClick={() => trackEvent("nav_click", { section: "projects" })}>
+            {t(lang, "nav.projects")}
+          </a>
+
+          <a href="#certifications" onClick={() => trackEvent("nav_click", { section: "certifications" })}>
+            {t(lang, "nav.certifications")}
+          </a>
+        </div>
+
+        {/* CTA DESKTOP */}
+        <div className="nav-right">
+          <a 
+            href="#contact" 
+            className="cta-animated nav-cta"
+            onClick={() => trackEvent("nav_click", { section: "contact" })}
+          >
+            {t(lang, "nav.contact")}
+          </a>
         </div>
 
         {/* HAMBURGER */}
         <div
           className={`hamburger ${menuOpen ? "open" : ""}`}
-          onClick={() => setMenuOpen(!menuOpen)}
+          onClick={() => {
+            setMenuOpen(!menuOpen);
+            trackEvent("nav_click", { section: "hamburger" });
+          }}
         >
           <span></span>
           <span></span>
@@ -68,37 +94,73 @@ export default function Navbar({ lang, setLang }) {
 
       {/* MENU MOBILE */}
       <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
-        <a href="#home" onClick={() => setMenuOpen(false)}>
+        <a 
+          href="#home"
+          onClick={() => {
+            trackEvent("nav_click", { section: "home_mobile" });
+            setMenuOpen(false);
+          }}
+        >
           {t(lang, "nav.home")}
         </a>
 
-        <a href="#about" onClick={() => setMenuOpen(false)}>
+        <a 
+          href="#about"
+          onClick={() => {
+            trackEvent("nav_click", { section: "about_mobile" });
+            setMenuOpen(false);
+          }}
+        >
           {t(lang, "nav.about")}
         </a>
 
-        <a href="#skills" onClick={() => setMenuOpen(false)}>
+        <a 
+          href="#skills"
+          onClick={() => {
+            trackEvent("nav_click", { section: "skills_mobile" });
+            setMenuOpen(false);
+          }}
+        >
           {t(lang, "nav.skills")}
         </a>
 
-        <a href="#projects" onClick={() => setMenuOpen(false)}>
+        <a 
+          href="#projects"
+          onClick={() => {
+            trackEvent("nav_click", { section: "projects_mobile" });
+            setMenuOpen(false);
+          }}
+        >
           {t(lang, "nav.projects")}
         </a>
 
-        <a href="#certifications" onClick={() => setMenuOpen(false)}>
+        <a 
+          href="#certifications"
+          onClick={() => {
+            trackEvent("nav_click", { section: "certifications_mobile" });
+            setMenuOpen(false);
+          }}
+        >
           {t(lang, "nav.certifications")}
         </a>
 
         <a
           href="#contact"
           className="cta-animated"
-          onClick={() => setMenuOpen(false)}
+          onClick={() => {
+            trackEvent("nav_click", { section: "contact_mobile" });
+            setMenuOpen(false);
+          }}
         >
           {t(lang, "nav.contact")}
         </a>
 
         <button
           className="lang-toggle mobile"
-          onClick={() => setLang(lang === "it" ? "en" : "it")}
+          onClick={() => {
+            trackEvent("change_language", { language: lang === "it" ? "en" : "it" });
+            setLang(lang === "it" ? "en" : "it");
+          }}
         >
           {lang === "it" ? "EN" : "IT"}
         </button>
