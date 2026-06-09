@@ -1,16 +1,85 @@
-# React + Vite
+# Portfolio – Antonio Florea 
+Benvenuto nel repository del mio Portfolio Personale, un sito moderno e animato sviluppato per presentare le mie competenze, i miei progetti e il mio percorso come Sviluppatore Frontend.Il portfolio è stato progettato con un approccio minimal, pulito e orientato ai dettagli, con animazioni fluide e un design completamente responsive.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## Live Demo
+Sito online: (antonioflorea.vercel.app)  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+## Screenshot
+![Portfolio Screenshot](src/assets/Portfolio.PNG)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+## Funzionalità
+- Animazioni fluide con Framer Motion
+- Effetto parallax nella Hero
+- Toggle lingua (IT/EN)
+- Navbar responsive con menu mobile
+- Sezioni animate con Fade-in on scroll
+- Layout completamente responsive
+- Design moderno, pulito e professionale
+- Ottimizzato per performance e UX
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+##  Tecnologie utilizzate
+- React
+- Vite
+- Framer Motion (animazioni)
+- CSS3 (custom, responsive)
+- JavaScript ES6+
+- i18n personalizzato (toggle lingua IT/EN)
+- Vercel (deploy)
+
+
+##  Installazzione e utilizzo
+1)  Clona la repository
+   
+git clone https://github.com/Anto037/Portfolio.git
+
+
+2) Entra nella cartella del progetto
+   
+   cd Portfolio
+
+
+3)  Installa le dipendenze
+
+   npm install
+
+4) Avvia il server di sviluppo
+
+   npm run dev
+
+
+##  Struttura del progetto
+Portfolio/
+│
+├── public/
+├── src/
+│   ├── assets/        # Immagini e icone
+│   ├── components/    # Componenti React
+│   ├── i18n/          # Traduzioni IT/EN
+│   ├── styles.css     # Stili globali
+│   ├── App.jsx
+│   └── main.jsx
+│
+└── package.json
+
+
+##  Contatti
+Hai un progetto o vuoi collaborare?
+
+    - Email: antonioflorea39@gmail.com
+
+    LinkedIn: www.linkedin.com/in/antonio-florea-b2b611292
+
+    GitHub: https://github.com/Anto037
+
+
+##  Autore
+Antonio  Florea - 
+Studente Web Developer – Verona, Italia
+
+
+##  Licenza
+Questo progetto è distribuito sotto licenza MIT.
