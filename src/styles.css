@@ -1762,6 +1762,10 @@ padding-top: 80px !important;
     padding: 8px 14px;
   z-index: 999999 !important;
   }
+
+    button.lang-toggle.mobile{
+display:none !important;
+  }
 }
 
 /* BREAKPOINT SECONDARIO — TELEFONI PICCOLI */
@@ -1795,5 +1799,9 @@ padding-top: 80px !important;
     bottom: 20px;
     right: 20px;
     padding: 8px 12px;
+  }
+
+    button.lang-toggle.mobile{
+display:none !important;
   }
 }
