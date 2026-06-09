@@ -18,6 +18,11 @@ import { SiPhp } from "react-icons/si";
 import Particles from "@tsparticles/react";
 import { loadFull } from "tsparticles";
 
+import TodoImg from "../assets/To-Do-List.png";
+import NotesImg from "../assets/Notes.png";
+import MeteoImg from "../assets/Meteo.png";
+import WebAgencyImg from "../assets/Web-Agency.png";
+
 const techIcons = {
   HTML: <FaHtml5 />,
   CSS: <FaCss3Alt />,
@@ -33,28 +38,28 @@ const techIcons = {
 const projects = (lang) => [
   {
     title: "To-Do List App",
-    img: "src/assets/To-Do-List.PNG",
+    img: TodoImg,
     desc: t(lang, "projects.todo.desc"),
     tech: ["HTML", "CSS", "JavaScript"],
     link: "https://github.com/Anto037/To-Do-List-App"
   },
   {
     title: "Notes App",
-    img: "src/assets/Notes.PNG",
+    img: NotesImg,
     desc: t(lang, "projects.notes.desc"),
     tech: ["HTML", "CSS", "JavaScript"],
     link: "https://github.com/Anto037/Notes-App"
   },
   {
     title: "Climafy",
-    img: "src/assets/Meteo.PNG",
+    img: MeteoImg,
     desc: t(lang, "projects.climafy.desc"),
     tech: ["HTML", "CSS", "JavaScript", "API"],
     link: "https://github.com/Anto037/Climafy"
   },
    {
     title: "Web-Agency-Website",
-    img: "src/assets/Web-Agency.PNG",
+    img: WebAgencyImg,
     desc: t(lang, "projects.web-agency.desc"),
     tech: ["HTML", "CSS", "JavaScript"],
     link: "https://github.com/Anto037/Web-Agency-Website"
