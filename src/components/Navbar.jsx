@@ -1,4 +1,3 @@
-import { trackEvent } from "../analytics";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { t } from "../i18n/index.js";
@@ -40,42 +39,12 @@ export default function Navbar({ lang, setLang }) {
 
         {/* LINKS CENTRATI */}
         <div className="nav-links">
-  <a 
-    href="#home" 
-    onClick={() => trackEvent("nav_click", { section: "home" })}
-  >
-    {t(lang, "nav.home")}
-  </a>
-
-  <a 
-    href="#about" 
-    onClick={() => trackEvent("nav_click", { section: "about" })}
-  >
-    {t(lang, "nav.about")}
-  </a>
-
-  <a 
-    href="#skills" 
-    onClick={() => trackEvent("nav_click", { section: "skills" })}
-  >
-    {t(lang, "nav.skills")}
-  </a>
-
-  <a 
-    href="#projects" 
-    onClick={() => trackEvent("nav_click", { section: "projects" })}
-  >
-    {t(lang, "nav.projects")}
-  </a>
-
-  <a 
-    href="#certifications" 
-    onClick={() => trackEvent("nav_click", { section: "certifications" })}
-  >
-    {t(lang, "nav.certifications")}
-  </a>
-</div>
-
+          <a href="#home">{t(lang, "nav.home")}</a>
+          <a href="#about">{t(lang, "nav.about")}</a>
+          <a href="#skills">{t(lang, "nav.skills")}</a>
+          <a href="#projects">{t(lang, "nav.projects")}</a>
+          <a href="#certifications">{t(lang, "nav.certifications")}</a>
+        </div>
 
         {/* CTA DESKTOP + TOGGLE LINGUA */}
         <div className="nav-right">
@@ -99,69 +68,33 @@ export default function Navbar({ lang, setLang }) {
 
       {/* MENU MOBILE */}
       <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
-        <a 
-  href="#home" 
-  onClick={() => {
-    trackEvent("nav_click", { section: "home" });
-    setMenuOpen(false);
-  }}
->
-  {t(lang, "nav.home")}
-</a>
+        <a href="#home" onClick={() => setMenuOpen(false)}>
+          {t(lang, "nav.home")}
+        </a>
 
+        <a href="#about" onClick={() => setMenuOpen(false)}>
+          {t(lang, "nav.about")}
+        </a>
 
-        <a 
-  href="#home" 
-  onClick={() => {
-    trackEvent("nav_click", { section: "home" });
-    setMenuOpen(false);
-  }}
->
-  {t(lang, "nav.home")}
-</a>
+        <a href="#skills" onClick={() => setMenuOpen(false)}>
+          {t(lang, "nav.skills")}
+        </a>
 
+        <a href="#projects" onClick={() => setMenuOpen(false)}>
+          {t(lang, "nav.projects")}
+        </a>
 
-        <a 
-  href="#home" 
-  onClick={() => {
-    trackEvent("nav_click", { section: "home" });
-    setMenuOpen(false);
-  }}
->
-  {t(lang, "nav.home")}
-</a>
+        <a href="#certifications" onClick={() => setMenuOpen(false)}>
+          {t(lang, "nav.certifications")}
+        </a>
 
-
-      <a 
-  href="#home" 
-  onClick={() => {
-    trackEvent("nav_click", { section: "home" });
-    setMenuOpen(false);
-  }}
->
-  {t(lang, "nav.home")}
-</a>
-
-
-        <a 
-  href="#home" 
-  onClick={() => {
-    trackEvent("nav_click", { section: "home" });
-    setMenuOpen(false);
-  }}
->
-  {t(lang, "nav.home")}
-</a>
-
-
-      <a 
-  href="#contact" 
-  className="cta-animated nav-cta"
-  onClick={() => trackEvent("nav_click", { section: "contact" })}
->
-  {t(lang, "nav.contact")}
-</a>
-
+        <a
+          href="#contact"
+          className="cta-animated"
+          onClick={() => setMenuOpen(false)}
+        >
+          {t(lang, "nav.contact")}
+        </a>
 
         <button
           className="lang-toggle mobile"
