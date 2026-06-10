@@ -20,11 +20,10 @@ body {
   color: var(--text);
   transition: background 0.3s ease, color 0.3s ease;
   overflow-x: hidden;
+  font-family: sans-serif;
 }
 
-/* ============================================================
-   SPAZIATURA GLOBALE — UNIFORME SU TUTTE LE SEZIONI (DESKTOP)
-   ============================================================ */
+
 section {
   padding: 60px 20px !important;
 }
@@ -56,17 +55,11 @@ section h2,
 }
 
 
-
-
-
-/* ============================================================
-   HERO — SPAZIATURA SPECIALE (NAVBAR FISSA)
-   ============================================================ */
+   /* Sezione Hero */
 .hero {
   padding-top: 160px !important;   /* evita sovrapposizione con navbar */
   padding-bottom: 120px !important;
 }
-
 
 
 .hero::after {
@@ -198,9 +191,7 @@ section h2,
 
 
 
-/* --- SKILLS --- */
-/* SEZIONE GENERALE */
-/* SEZIONE GENERALE */
+/* Sezione Skills */
 .skills-section {
   max-width: 1200px;
   margin: auto;
@@ -214,7 +205,6 @@ section h2,
   letter-spacing: -1px;
 }
 
-/* TITOLO ANIMATO */
 .section-title {
   position: relative;
   display: inline-block;
@@ -236,7 +226,6 @@ section h2,
   width: 100%;
 }
 
-/* GRIGLIA ORIZZONTALE STILE MOLON */
 .skills-categories {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
@@ -245,7 +234,7 @@ section h2,
   margin-top: 20px;
 }
 
-/* CARD PRINCIPALI */
+/* Card principali */
 .skill-category {
   background: rgba(255, 255, 255, 0.03);
   padding: 20px;
@@ -264,7 +253,6 @@ section h2,
   box-shadow: 0 0 25px rgba(0, 150, 255, 0.18);
 }
 
-/* TITOLI DELLE CARD — GRADIENT ANIMATO */
 .skill-category h3 {
   background: linear-gradient(90deg, var(--accent), #ffffff);
   -webkit-background-clip: text;
@@ -281,14 +269,12 @@ section h2,
   100% { background-position: 200%; }
 }
 
-/* GRIGLIA INTERNA DELLE SKILL */
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
 }
 
-/* PILL DELLE SKILL */
 .skill-card {
   display: flex;
   align-items: center;
@@ -306,7 +292,6 @@ section h2,
   transform: translateY(-3px);
 }
 
-/* ICONA CON GLOW PREMIUM */
 .skill-icon {
   font-size: 40px;
   margin-bottom: 12px;
@@ -334,7 +319,7 @@ section h2,
   transform: scale(1.15);
 }
 
-/* --- PROJECTS --- */
+/* Sezione progetti */
 .projects {
   max-width: 1100px;
   margin: auto;
@@ -345,7 +330,6 @@ section h2,
   color: white;
 }
 
-/* SFONDO ANIMATO */
 .projects-bg {
   position: absolute;
   inset: 0;
@@ -360,14 +344,12 @@ section h2,
   100% { background-position: 0% 50%; }
 }
 
-/* PARTICELLE */
 #tsparticles {
   position: absolute;
   inset: 0;
   z-index: -2;
 }
 
-/* TITOLO CON EFFETTO NEON */
 .projects h2 {
   font-size: 3rem;
   color: white;
@@ -380,7 +362,7 @@ section h2,
   50% { text-shadow: 0 0 20px var(--accent), 0 0 40px var(--accent); }
 }
 
-/* CARD */
+/* Card*/
 .project-card-pro {
   background: rgba(0, 40, 80, 0.55); /* blu trasparente leggibile */
   padding: 50px;
@@ -400,7 +382,6 @@ section h2,
   to { opacity: 1; transform: translateY(0) scale(1); }
 }
 
-/* BORDO NEON ANIMATO */
 .project-card-pro::before {
   content: "";
   position: absolute;
@@ -417,13 +398,11 @@ section h2,
   100% { background-position: 0% 50%; }
 }
 
-/* OMBRA DINAMICA */
 .project-card-pro:hover {
   box-shadow: 0 0 40px rgba(0,150,255,0.25);
   transform: translateY(-10px) rotateX(4deg) rotateY(4deg);
 }
 
-/* WATERMARK NUMERO GIGANTE DIETRO */
 .project-number-bg {
   position: absolute;
   top: 20px;
@@ -435,7 +414,6 @@ section h2,
   z-index: 0;
 }
 
-/* IMMAGINE + PARALLAX + GLOW */
 .project-image-pro {
   width: 100%;
   height: 100%;
@@ -455,7 +433,6 @@ section h2,
 
 
 
-/* GLOW ANIMATO */
 .image-glow {
   position: absolute;
   inset: 0;
@@ -469,7 +446,6 @@ section h2,
   opacity: 1;
 }
 
-/* NUMERO GRANDE */
 .project-number {
   display: block;
   font-size: 4.5rem;
@@ -482,7 +458,6 @@ section h2,
   z-index: 1;
 }
 
-/* TITOLO */
 .project-title {
   font-size: 2rem;
   font-weight: 600;
@@ -498,7 +473,6 @@ section h2,
   text-shadow: 0 0 10px var(--accent);
 }
 
-/* DESCRIZIONE */
 .project-desc {
   opacity: 0.85;
   font-size: 1.1rem;
@@ -513,7 +487,6 @@ section h2,
   transform: translateY(-3px);
 }
 
-/* TECNOLOGIE */
 .tech-list {
   display: flex;
   gap: 14px;
@@ -553,7 +526,6 @@ section h2,
   color: white;
 }
 
-/* BOTTONE GITHUB */
 .github-btn {
   display: inline-block;
   margin-top: 10px;
@@ -573,8 +545,7 @@ section h2,
   transform: translateY(-3px) scale(1.05);
 }
 
-/* SWIPER */
-/* SWIPER */
+
 .swiper-button-next,
 .swiper-button-prev {
   color: white !important;
@@ -585,24 +556,20 @@ section h2,
   background: white;
 }
 
-/* Wrapper che allunga tutte le slide */
 .swiper-wrapper {
   align-items: stretch;
 }
 
-/* Le card riempiono la slide */
 .project-card-pro,
 .coming-soon {
   min-height: 720px;}
 
-/* Rimuovi eventuali pseudo-elementi */
 .swiper-slide::before,
 .swiper-slide::after {
   display: none !important;
   content: "" !important;
 }
 
-/* CARD COMING SOON */
 .coming-soon {
   display: flex;
   flex-direction: column;
@@ -638,14 +605,13 @@ section h2,
 
 
 
-/* --- CERTIFICATIONS (Soft Premium) --- */
+/* Sezione certificazioni */
 
 .certifications {
   text-align: center;
   position: relative;
 }
 
-/* TITOLO */
 .certifications h2 {
   font-size: 3.2rem;
   font-weight: 800;
@@ -654,7 +620,6 @@ section h2,
   text-shadow: 0 0 12px rgba(0,120,255,0.35);
 }
 
-/* GRIGLIA */
 .cert-grid {
   margin-top: 40px;
   display: grid;
@@ -665,7 +630,6 @@ section h2,
   margin-right: auto;
 }
 
-/* CARD PREMIUM */
 .cert-card {
   padding: 28px;
   border-radius: 20px;
@@ -676,14 +640,12 @@ section h2,
   text-align: center;
 }
 
-/* HOVER */
 .cert-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 0 30px rgba(0,120,255,0.25);
   border-color: var(--accent);
 }
 
-/* TITOLO CERTIFICAZIONE */
 .cert-card h3 {
   font-size: 1.3rem;
   font-weight: 800;
@@ -698,7 +660,6 @@ section h2,
   transform: translateX(4px);
 }
 
-/* ENTE */
 .cert-issuer {
   font-size: 1.1rem;
   color: white;
@@ -706,7 +667,6 @@ section h2,
   text-align:center;
 }
 
-/* BOTTONE "VEDI CERTIFICATO" */
 .cert-view-btn {
   margin-top: 12px;
   padding: 8px 16px;
@@ -726,7 +686,6 @@ section h2,
   transform: translateY(-3px);
 }
 
-/* POPUP OVERLAY */
 .cert-popup {
   position: fixed;
   inset: 0;
@@ -743,7 +702,6 @@ section h2,
   to { opacity: 1; }
 }
 
-/* CONTENITORE POPUP */
 .cert-popup-content {
   background: rgba(0, 40, 80, 0.55);
   padding: 20px;
@@ -758,7 +716,6 @@ section h2,
   to { transform: scale(1); opacity: 1; }
 }
 
-/* IMMAGINE POPUP */
 .cert-popup-content img {
   max-width: 50vw;
   max-height: 80vh;
@@ -767,7 +724,6 @@ section h2,
   margin-left: 60px;
 }
 
-/* BOTTONE CHIUDI */
 .close-popup {
   padding: 16px 20px;
   background: transparent;
@@ -790,14 +746,13 @@ section h2,
 
 
 
-/* --- CONTACT MIX (Soft Premium) --- */
+/* Sezione contatti */
 
 .contact {
   max-width: 1200px;
   margin: auto;
 }
 
-/* GRID 2 COLONNE */
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -805,7 +760,6 @@ section h2,
   margin-bottom: 60px;
 }
 
-/* COLONNA SINISTRA */
 .contact-left {
   text-align: left;
 }
@@ -843,7 +797,6 @@ section h2,
   transform: translateY(-3px);
 }
 
-/* BOX CONTATTI (COLONNA DESTRA) */
 .contact-box {
   padding: 30px;
   border-radius: 20px;
@@ -875,7 +828,6 @@ section h2,
   color: white;
 }
 
-/* SOCIAL */
 .contact-social h4 {
   color: var(--accent);
   margin-bottom: 10px;
@@ -893,7 +845,7 @@ section h2,
   transform: translateY(-3px);
 }
 
-/* FORM */
+/* Form */
 .contact-form {
   max-width: 500px;
   margin: auto;
@@ -926,7 +878,6 @@ section h2,
   background: rgba(255,255,255,0.08);
 }
 
-/* BOTTONE */
 .contact-btn {
   padding: 16px;
   background: transparent;
@@ -972,7 +923,6 @@ section h2,
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.25);
 }
 
-/* LINEA LUMINOSA SCORREVOLE NAVBAR */
 .navbar::after {
   content: "";
   position: absolute;
@@ -1008,11 +958,6 @@ section h2,
 }
 
 
-
-
-
-
-/* LOGO */
 .nav-logo {
   font-size: 26px;
   font-weight: 800;
@@ -1020,7 +965,6 @@ section h2,
   color: var(--accent);
 }
 
-/* LINKS */
 .nav-links {
   display: flex;
   gap: 20px;
@@ -1047,7 +991,6 @@ section h2,
 
 
 
-/* HAMBURGER */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -1057,7 +1000,6 @@ section h2,
   margin-left: 20px;
 }
 
-/* Linee hamburger (chiuso) */
 .hamburger span {
   width: 28px;
   height: 3.5px;
@@ -1066,7 +1008,6 @@ section h2,
   transition: 0.3s ease;
 }
 
-/* Trasformazione in X (aperto) */
 .hamburger.open span {
   background: var(--accent); /* X blu */
   box-shadow: 0 0 6px rgba(0,123,255,0.6);
@@ -1084,7 +1025,6 @@ section h2,
   transform: translateY(-9px) rotate(-45deg);
 }
 
-/* OVERLAY */
 .nav-overlay {
   position: fixed;
   inset: 0;
@@ -1100,7 +1040,6 @@ section h2,
   pointer-events: all;
 }
 
-/* MENU MOBILE */
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -1158,11 +1097,6 @@ section h2,
 }
 
 
-
-
-
-
-
 .logo-neon {
   color: #007bff;
   text-decoration: none;
@@ -1181,10 +1115,7 @@ section h2,
 }
 
 
-
-
-
-/* --- ABOUT PRO (Soft Premium) --- */
+/* Sezione chi sono*/
 
 .about-pro {
   max-width: 1200px;
@@ -1206,7 +1137,6 @@ section h2,
   gap: 60px;
 }
 
-/* CARD GLASS */
 .glass {
   background: rgba(4, 75, 156, 0.932);
   border: 1px solid rgba(0,120,255,0.25);
@@ -1221,7 +1151,6 @@ section h2,
   margin-bottom: 20px;
 }
 
-/* FOTO */
 .about-pro-image-wrapper {
   position: relative;
   width: 220px;
@@ -1249,7 +1178,6 @@ section h2,
   opacity: 1;
 }
 
-/* TESTO */
 .about-pro-desc,
 .about-pro-text {
   color: white;
@@ -1263,7 +1191,6 @@ section h2,
   font-weight: 600;
 }
 
-/* INFO BOX */
 .about-pro-info {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1282,7 +1209,6 @@ section h2,
   font-size: 1rem;
 }
 
-/* BOTTONE */
 .about-pro-btn {
   display: inline-block;
   padding: 12px 22px;
@@ -1301,7 +1227,6 @@ section h2,
   transform: translateY(-3px);
 }
 
-/* --- AVATAR PERSONALIZZATO ANTONIO (Soft Premium) --- */
 
 .avatar-antonio {
   display: flex;
@@ -1337,24 +1262,14 @@ section h2,
 }
 
 
-
-
-
-/* --- FOOTER SOFT PREMIUM --- */
+/* Footer */
 
 .footer {
   text-align: center;
-
-  /* Soft Premium */
   background: rgba(0, 40, 80, 0.25);
   border-top: 1px solid rgba(0,120,255,0.25);
-
-  /* Glow leggero */
   box-shadow: 0 -5px 25px rgba(0,120,255,0.15);
-
   transition: 0.3s ease;
-
-  /* Necessario per la linea luminosa */
   position: relative;
   overflow: hidden;
 }
@@ -1390,7 +1305,6 @@ section h2,
   transform: translateY(-2px);
 }
 
-/* --- LINEA LUMINOSA A SCORRIMENTO --- */
 .footer::before {
   content: "";
   position: absolute;
@@ -1471,12 +1385,6 @@ button:hover {
 
 
 
-
-
-
-
-
-
 .parallax-card {
   transition: transform 0.15s ease-out;
   transform-style: preserve-3d;
@@ -1508,7 +1416,7 @@ button:hover {
 
 
 .nav-right {
-  width: 140px; /* spazio riservato */
+  width: 140px; 
   display: flex;
   margin-right: 38px;
 }
@@ -1554,8 +1462,6 @@ button:hover {
 }
 
 
-
-
 .scroll-progress {
   position: fixed;
   top: 0;
@@ -1593,56 +1499,53 @@ button:hover {
 }
 
 
-
-/* --- MEDIA QUERY --- */
-/* BREAKPOINT PRINCIPALE — MOBILE + TABLET */
+/* --- Media Query --- */
 @media (max-width: 900px) {
 
-  /* SPAZIATURA SEZIONI */
   section {
-        padding: 80px 20px !important;
+  padding: 80px 20px !important;
   }
 
-  /* TITOLI */
   h1 {
-    font-size: 42px;
-    line-height: 1.2;
+  font-size: 42px;
+  line-height: 1.2;
   }
 
   h2 {
-    font-size: 28px;
-    line-height: 1.3;
+  font-size: 28px;
+  line-height: 1.3;
   }
 
-  /* NAVBAR */
+  
   .navbar {
-    padding: 14px 20px;
-    justify-content: space-around;
+  padding: 14px 20px;
+  justify-content: space-around;
   }
 
   .navbar.scrolled {
-    padding: 10px 22px;
+  padding: 10px 22px;
   }
 
   .nav-links,
   .nav-cta {
-    display: none !important;
+  display: none !important;
   }
 
   .cta-animated {
-    width: auto;
+  width: auto;
   }
 
   .hamburger {
-    display: flex;
-    margin-right:40px;
+  display: flex;
+  margin-right:40px;
   }
 
-  /* HERO */
+  
   .hero {
-    height: auto;
+  height: auto;
 padding-top: 80px !important;
-    padding-bottom: 40px !important;  }
+padding-bottom: 40px !important; 
+ }
 
   .hero-content {
     flex-direction: column;
@@ -1674,7 +1577,7 @@ padding-top: 80px !important;
   width: auto;
 }
 
-  /* ABOUT */
+
   .about-pro-info {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -1684,7 +1587,7 @@ padding-top: 80px !important;
     margin: auto;
   }
 
-  /* SKILLS */
+  
   .skills-grid {
     grid-template-columns: 1fr;
     gap: 24px;
@@ -1698,7 +1601,7 @@ padding-top: 80px !important;
   margin-top: 80%;
 }
 
-  /* PROJECTS */
+  
   .projects-grid {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -1710,7 +1613,7 @@ padding-top: 80px !important;
    
   }
 
-  /* CERTIFICAZIONI */
+  
   .cert-card {
     padding: 22px;
   }
@@ -1731,8 +1634,6 @@ padding-top: 80px !important;
   }
 
  
-
-
 .close-popup {
   padding: 12px 18px;
   font-size: 16px;
@@ -1741,7 +1642,7 @@ padding-top: 80px !important;
 }
 
 
-  /* CONTATTI */
+  
   .contact-grid {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -1767,7 +1668,7 @@ display:none !important;
   }
 }
 
-/* BREAKPOINT SECONDARIO — TELEFONI PICCOLI */
+/* Media Query */
 @media (max-width: 600px) {
 
   h1 {
